@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.StarWarsSchema = void 0;
 /**
  *  Copyright (c) 2015, Facebook, Inc.
  *  All rights reserved.
