@@ -6,7 +6,11 @@ const {
   ColorConsoleOutput,
   ConsoleOutput
 } = require("@2fd/command");
-const { GraphQLDocumentGenerator } = require("../lib/command");
+const path = require("path");
+const { GraphQLDocumentGenerator } = require(path.resolve(
+  __dirname,
+  "../lib/command"
+));
 const argv = process.argv.filter(arg => arg !== "--no-color");
 new GraphQLDocumentGenerator().handle(
   new ArgvInput(argv),
